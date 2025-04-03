@@ -1,4 +1,4 @@
-package com.echoes.eoa.common.datagen;
+package com.echoes.eoa.datagen;
 
 import com.echoes.eoa.EchoesOfAdventure;
 import com.echoes.eoa.common.block.ModBlocks;
@@ -18,8 +18,8 @@ public class ItemModelProvider extends net.neoforged.neoforge.client.model.gener
 
     @Override
     protected void registerModels() {
-        // basicItem[ITEM_ID])
-
+        simpleBlockItem(ModBlocks.CHORUS_GRASS.get());
+        
         simpleBlockItem(ModBlocks.CRACKED_BRICKS.get());
         registerWall(ModBlocks.CRACKED_BRICK_WALL, ModBlocks.CRACKED_BRICKS);
         registerStairs(ModBlocks.CRACKED_BRICK_STAIRS, ModBlocks.CRACKED_BRICKS);

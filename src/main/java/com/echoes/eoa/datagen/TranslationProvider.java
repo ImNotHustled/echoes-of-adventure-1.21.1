@@ -1,4 +1,4 @@
-package com.echoes.eoa.common.datagen;
+package com.echoes.eoa.datagen;
 
 import com.echoes.eoa.EchoesOfAdventure;
 import com.echoes.eoa.common.block.ModBlocks;

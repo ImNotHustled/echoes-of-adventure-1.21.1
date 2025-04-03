@@ -1,4 +1,4 @@
-package com.echoes.eoa.common.datagen;
+package com.echoes.eoa.datagen;
 
 import com.echoes.eoa.common.block.ModBlocks;
 import net.minecraft.core.HolderLookup;
@@ -33,13 +33,13 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .unlockedBy("has_cracked_bricks", has(ModBlocks.CRACKED_BRICKS))
                 .save(recipeOutput);
 
-        stairBuilder(ModBlocks.CRACKED_STONE_BRICK_STAIRS, Ingredient.of(ModBlocks.CRACKED_STONE_BRICK_STAIRS))
+        stairBuilder(ModBlocks.CRACKED_STONE_BRICK_STAIRS, Ingredient.of(Blocks.CRACKED_STONE_BRICKS))
                 .unlockedBy("has_cracked_stone_bricks", has(Blocks.CRACKED_STONE_BRICKS))
                 .save(recipeOutput);
-        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_STONE_BRICK_SLAB, Ingredient.of(ModBlocks.CRACKED_BRICKS))
+        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_STONE_BRICK_SLAB, Ingredient.of(Blocks.CRACKED_STONE_BRICKS))
                 .unlockedBy("has_cracked_stone_bricks", has(Blocks.CRACKED_STONE_BRICKS))
                 .save(recipeOutput);
-        wallBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_STONE_BRICK_WALL, Ingredient.of(ModBlocks.CRACKED_BRICKS))
+        wallBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRACKED_STONE_BRICK_WALL, Ingredient.of(Blocks.CRACKED_STONE_BRICKS))
                 .unlockedBy("has_cracked_stone_bricks", has(Blocks.CRACKED_STONE_BRICKS))
                 .save(recipeOutput);
     }

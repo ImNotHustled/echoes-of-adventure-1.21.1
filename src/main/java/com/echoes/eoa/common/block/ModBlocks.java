@@ -1,9 +1,8 @@
 package com.echoes.eoa.common.block;
 
 import com.echoes.eoa.EchoesOfAdventure;
+import com.echoes.eoa.common.block.custom.EndBushBlock;
 import com.echoes.eoa.common.item.ModItems;
-import com.mojang.serialization.MapCodec;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -16,10 +15,9 @@ import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(EchoesOfAdventure.MOD_ID);
-    public static final DeferredRegister<MapCodec<? extends Block>> MAP_CODECS = DeferredRegister.create(BuiltInRegistries.BLOCK_TYPE, EchoesOfAdventure.MOD_ID);
 
     // The End
-    //public static final DeferredBlock<Block> END_GRASS = register("end_grass", () -> new EndGrass(Blocks.END_STONE.properties()));
+    public static final DeferredBlock<Block> CHORUS_GRASS = register("chorus_grass", () -> new EndBushBlock(Blocks.SHORT_GRASS.properties()));
 
     // Cracked Variant
     private static final BlockBehaviour.Properties brick_property = Blocks.BRICKS.properties();

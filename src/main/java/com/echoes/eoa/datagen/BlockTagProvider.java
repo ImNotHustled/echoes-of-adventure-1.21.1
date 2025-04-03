@@ -1,4 +1,4 @@
-package com.echoes.eoa.common.datagen;
+package com.echoes.eoa.datagen;
 
 import com.echoes.eoa.EchoesOfAdventure;
 import com.echoes.eoa.common.block.ModBlocks;
@@ -26,6 +26,14 @@ public class BlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.CRACKED_BRICK_SLAB.get())
                 .add(ModBlocks.CRACKED_STONE_BRICK_SLAB.get());
         tag(BlockTags.WALLS)
+                .add(ModBlocks.CRACKED_BRICK_WALL.get())
+                .add(ModBlocks.CRACKED_STONE_BRICK_WALL.get());
+        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.CRACKED_BRICKS.get())
+                .add(ModBlocks.CRACKED_BRICK_STAIRS.get())
+                .add(ModBlocks.CRACKED_STONE_BRICK_STAIRS.get())
+                .add(ModBlocks.CRACKED_BRICK_SLAB.get())
+                .add(ModBlocks.CRACKED_STONE_BRICK_SLAB.get())
                 .add(ModBlocks.CRACKED_BRICK_WALL.get())
                 .add(ModBlocks.CRACKED_STONE_BRICK_WALL.get());
     }

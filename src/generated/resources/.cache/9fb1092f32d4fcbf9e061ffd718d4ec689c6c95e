@@ -1,4 +1,4 @@
-// 1.21.1	2025-04-01T14:13:16.9377396	Recipes
+// 1.21.1	2025-04-01T19:23:29.7921301	Recipes
 f730f92abe0ac036adbe6edf98d639d6066ed35c data/eoa/advancement/recipes/building_blocks/cracked_brick_slab.json
 c3b6bca2d15751d133861a52b17f7a87668417c1 data/eoa/advancement/recipes/building_blocks/cracked_brick_stairs.json
 7593d34a334ebe35c94907df5cfcf26d67152366 data/eoa/advancement/recipes/building_blocks/cracked_brick_wall.json
@@ -8,8 +8,8 @@ a0f601d535aa37efe754520d1c3d812ddb0e0679 data/eoa/advancement/recipes/building_b
 42e20f6838599bdccc5708aabe8630c50985f189 data/eoa/recipe/cracked_brick_slab.json
 54b2ef58c7272d9b50bf74e3a48b756fe09f6342 data/eoa/recipe/cracked_brick_stairs.json
 7ce1ec1922fcfd108c37ad98b3309bee2599227c data/eoa/recipe/cracked_brick_wall.json
-46efb45a0c15f600f0e9fe4b22d9c3c66c8fc50c data/eoa/recipe/cracked_stone_brick_slab.json
-f1e74ef852a3c975c9ad75dd2b448b7c3d6fecd9 data/eoa/recipe/cracked_stone_brick_stairs.json
-4c41a24f3482093bb3d325114734ed1de6bdebcb data/eoa/recipe/cracked_stone_brick_wall.json
+ff64153b6edbab5a0166d3e617a78aea757110a4 data/eoa/recipe/cracked_stone_brick_slab.json
+d7355e781f35f1ddaebd637d78ab7860a1140e76 data/eoa/recipe/cracked_stone_brick_stairs.json
+759c587c02a47447f619bb0e8ea9c97942c6c469 data/eoa/recipe/cracked_stone_brick_wall.json
 2530f2ed56044e5ef5bbbe8bac1db7fc498c9e53 data/minecraft/advancement/recipes/food/cracked_bricks_from_smelting.json
 a54c46473e13b05a34b3ba5fc3c0886a3bf0d586 data/minecraft/recipe/cracked_bricks_from_smelting.json

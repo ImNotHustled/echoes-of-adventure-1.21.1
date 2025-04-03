@@ -1,4 +1,4 @@
-package com.echoes.eoa.common.datagen;
+package com.echoes.eoa.datagen;
 
 import com.echoes.eoa.EchoesOfAdventure;
 import net.minecraft.core.HolderLookup;
@@ -28,11 +28,12 @@ public class DataGenerationCore {
         ExistingFileHelper fileHelper = event.getExistingFileHelper();
         CompletableFuture<HolderLookup.Provider> lookup = event.getLookupProvider();
 
+        generator.addProvider(true, new LootTableProvider(pack, Collections.emptySet(), List.of(new LootTableProvider.SubProviderEntry(BlockLootTableProvider::new, LootContextParamSets.BLOCK)), lookup));
         generator.addProvider(true, new BlockStateProvider(pack, fileHelper));
         generator.addProvider(true, new TranslationProvider(pack, "en_us"));
         generator.addProvider(true, new ItemModelProvider(pack, fileHelper));
-        generator.addProvider(true, new LootTableProvider(pack, Collections.emptySet(), List.of(new LootTableProvider.SubProviderEntry(BlockLootTableProvider::new, LootContextParamSets.BLOCK)), lookup));
         generator.addProvider(true, new BlockTagProvider(pack, lookup, fileHelper));
         generator.addProvider(true, new RecipeProvider(pack, lookup));
+        generator.addProvider(true, new DatapackProvider(pack, lookup));
     }
 }

@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "eoa:cracked_bricks"
+      "item": "minecraft:cracked_stone_bricks"
     }
   },
   "pattern": [

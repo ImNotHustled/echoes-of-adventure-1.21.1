@@ -1,4 +1,4 @@
-package com.echoes.eoa.common.datagen;
+package com.echoes.eoa.datagen;
 
 import com.echoes.eoa.common.block.ModBlocks;
 import net.minecraft.core.Holder;
@@ -17,6 +17,9 @@ public class BlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+        dropWhenSilkTouch(ModBlocks.CHORUS_GRASS.get());
+        createShearsOnlyDrop(ModBlocks.CHORUS_GRASS.get());
+
         dropSelf(ModBlocks.CRACKED_BRICKS.get());
         dropSelf(ModBlocks.CRACKED_BRICK_STAIRS.get());
         dropSelf(ModBlocks.CRACKED_BRICK_SLAB.get());

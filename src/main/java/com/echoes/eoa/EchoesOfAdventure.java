@@ -2,7 +2,7 @@ package com.echoes.eoa;
 
 import com.echoes.eoa.common.block.ModBlocks;
 import com.echoes.eoa.common.item.ModItems;
-import com.echoes.eoa.common.item.ModItemGroup;
+import com.echoes.eoa.common.item.ModItemGroups;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.User;
@@ -31,7 +31,7 @@ public class EchoesOfAdventure {
 
         ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
-        ModItemGroup.register(modEventBus);
+        ModItemGroups.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 

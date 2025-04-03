@@ -11,7 +11,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 
-public class ModItemGroup {
+public class ModItemGroups {
     public static final DeferredRegister<CreativeModeTab> ITEM_GROUP = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, EchoesOfAdventure.MOD_ID);
 
     public static final Supplier<CreativeModeTab> EOA_ITEM_GROUP = ITEM_GROUP.register("end",
@@ -19,7 +19,7 @@ public class ModItemGroup {
                     .icon(() -> new ItemStack(ModBlocks.CRACKED_BRICKS))
                     .title(Component.translatable("itemGroup.echoesofadventure"))
                     .displayItems(((itemDisplayParameters, output) -> {
-                        //output.accept(ModBlock.END_GRASS);
+                        output.accept(ModBlocks.CHORUS_GRASS);
                         output.accept(ModBlocks.CRACKED_BRICKS);
                         output.accept(ModBlocks.CRACKED_BRICK_STAIRS);
                         output.accept(ModBlocks.CRACKED_BRICK_SLAB);
